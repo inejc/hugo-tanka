@@ -4,6 +4,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-feature-settings: "liga", "kern";
     background-color: #fff;
+    text-align: center;
 }
 
 /* Fix jumping scrollbar when switching to long pages */
@@ -13,10 +14,22 @@ html {
     margin-right: 0;
 }
 
-/* margin top */
+/* margins */
 
 .mt-xl {
     margin-top: 60px;
+}
+
+.mt-xxl {
+    margin-top: 70px;
+}
+
+.mb-sm {
+  margin-bottom: 20px;
+}
+
+.mb-xl {
+  margin-bottom: 50px;
 }
 
 /* link */
@@ -69,7 +82,7 @@ hr {
 }
 
 .header ul.nav {
-    margin-bottom: 5rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Partial: Content */
@@ -137,6 +150,9 @@ hr {
 }
 
 /* centered, boxed blog post images */
+figcaption {
+    margin-top: 10px;
+}
 
 .content .figure img {
     display: block;
@@ -212,7 +228,7 @@ hr {
 
 .content .meta-title {
     font-size: 1.5625rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .content .meta-title {
