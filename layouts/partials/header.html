@@ -1,24 +1,28 @@
-<div class="mt-xl header">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-auto">
-                <a href="{{ .Site.BaseURL }}">
-                    <h1 class="name">{{ .Site.Params.sitename }}</h1>
-                </a>
-            </div>
-        </div>
+<picture>
+  <source media="(max-width: 767.98px)" srcset="/images/logo-mobile.jpg">
+  <img class="logo" src="/images/logo-desktop.jpg">
+</picture>
 
-        <div class="row justify-content-center">
-            <ul class="nav nav-primary">
-                {{ range .Site.Menus.primary.ByWeight }}
-                <li class="nav-item">
-                    <a class="nav-link{{ if .Identifier }} text-{{ .Identifier }}{{ end }}" href="{{ .URL }}">
-                        {{ .Pre }}
-                        {{ .Name }}
-                    </a>
-                </li>
-                {{ end }}
-            </ul>
-        </div>
+<div class="mt-sm header">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <a href="{{ .Site.BaseURL }}">
+          <h1 class="name">{{ .Site.Params.sitename }}</h1>
+        </a>
+      </div>
     </div>
+    <div class="row justify-content-center">
+      <ul class="nav nav-primary">
+        {{ range .Site.Menus.primary.ByWeight }}
+        <li class="nav-item">
+          <a class="nav-link{{ if .Identifier }} text-{{ .Identifier }}{{ end }}" href="{{ .URL }}">
+            {{ .Pre }}
+            {{ .Name }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
 </div>
