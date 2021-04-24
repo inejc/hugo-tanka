@@ -2,24 +2,26 @@
 {{ partial "header" . }}
 
 <div class="content">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-sm-12 col-lg-8">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-lg-8">
+        <div class="container mt-sm mb-xl">
 
-                <div class="mx-0 mx-md-4 posts">
-                    <div class="mb-sm">
-                        Click on a gallery below to see the images.
-                    </div>
-                    {{ range .Data.Pages.GroupByDate "2006" "desc"}}
-                    {{ range sort .Pages "Date" "desc" }}
-                    {{ partial "list" . }}
-                    {{ end }}
-                    {{ end }}
-                </div>
-
+          <div class="row">
+            <div class="col-sm">
+              <a class="thumbnail" href="/posts/until-next-time"><img src="/images/until-next-time.jpg"></a>
+              <p>Until next time</p>
             </div>
+            <div class="col-sm">
+              <a class="thumbnail" href="/posts/2020"><img src="/images/2020.jpg"></a>
+              <p>2020</p>
+            </div>
+          </div>
+
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
 {{ partial "footer" . }}
